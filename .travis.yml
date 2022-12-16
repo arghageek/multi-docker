@@ -14,3 +14,10 @@ after_success:
   - docker build -t arghageek/multi-nginx ./nginx
   - docker build -t arghageek/multi-server ./server
   - docker build -t arghageek/multi-worker ./worker
+  #Login to docker CLI
+  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
+  # Take those images and push them to docker hub
+  - docker push arghageek/multi-client
+  - docker push arghageek/multi-nginx
+  - docker push arghageek/multi-server
+  - docker push arghageek/multi-worker
