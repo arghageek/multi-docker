@@ -33,7 +33,7 @@ function App() {
             target='_blank'
             rel='noopener noreferrer'
           >
-            Learn React
+            Welcome to CI CD
           </a>
         </header>
       </div>
