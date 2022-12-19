@@ -33,7 +33,7 @@ function App() {
             target='_blank'
             rel='noopener noreferrer'
           >
-            Welcome to CI CD
+            Welcome to CI/CD
           </a>
         </header>
       </div>
